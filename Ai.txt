@@ -22,6 +22,25 @@ while True:
         break
 
 
+Output :
+Guessing the number
+Range of Numbers
+enter starting point :10
+enter ending point :20
+Guess the number :11
+Guess a higher number :
+Guess the number :13
+Guess a higher number :
+Guess the number :15
+Guess a higher number :
+Guess the number :19
+Guess a lower number :
+Guess the number :17
+Guess a higher number :
+Guess the number :18
+You have guessed right number
+
+
 
 filename:8-puzzle-problem.py
 ---------------------------------------
@@ -95,6 +114,21 @@ else:
     print("No solution found (may be due to depth limit).")
 
 
+Output :
+Solution found in 2 moves using DFS:
+[1, 2, 3]
+[4, 0, 6]
+[7, 5, 8]
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 0, 8]
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 0]
+
+
 
 filename:bfs-water-jug.py
 ----------------------------------
@@ -154,6 +188,13 @@ if solution_path:
 else:
     print("No solution found.")
 
+Output :
+Solution steps:
+(0, 0)
+(0, 3)
+(3, 0)
+(3, 3)
+(4, 2)
 
 
 
@@ -206,6 +247,12 @@ if output:
     print("Path:",output)
 else:
     print("Solution not Found")
+
+
+Output :
+Solution Found
+Steps: 6
+Path: ['fill jug 2', 'pour jug 2 to jug 1', 'empty jug 1', 'pour jug 2 to jug 1', 'fill jug 2', 'pour jug 2 to jug 1']
 
 
 
@@ -326,6 +373,13 @@ def game():
 if __name__ == "__main__":
     game()
 
+Output :
+| | 
+-+-+-
+ | | 
+-+-+-
+ | | 
+It's your turn, X. Move to which place?
 
 
 filename:travelling-salesman.py
@@ -373,3 +427,14 @@ for path in best_paths:
     name_path = [city_names[i] for i in path]
     print(f'{'->'.join(name_path)}')
 
+Output :
+Path: A->B->C->D->A,Cost:80
+Path: A->B->D->C->A,Cost:95
+Path: A->C->B->D->A,Cost:95
+Path: A->C->D->B->A,Cost:80
+Path: A->D->B->C->A,Cost:105
+Path: A->D->C->B->A,Cost:95
+
+Shortest Path(s):
+A->B->C->D->A
+A->C->D->B->A
